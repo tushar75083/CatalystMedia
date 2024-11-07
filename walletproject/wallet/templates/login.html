@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form action="" method="post" novalidate class="shadow-lg p-3 mt-4">
+                {% csrf_token %}
+               
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="container alert alert-danger">
+                                {{message}}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                
+                
+
+                <h1 class="text-center alert alert-info">Login Here </h1>
+                <hr>
+        
+                {% for fm in form %}
+       
+                    {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br>
+                    
+                {% endfor %}
+                <input type="submit" value="Login" class="btn btn-primary">
+
+                <span style="color: blue;">New User ?</span>
+                <a href="{% url 'signup' %}"> Create Account </a>
+
+
+            </form>
+        </div>
+    </div>
+   </div>
+    
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+  
+   <div class="container">
+    <div class="row">
+        <!-- <div class="col-md-5 mt-5 p-3" >
+            <p>Available Funds</p>
+            <p>Rs.1000</p>
+
+            <form action="" method="post">
+                {% csrf_token %}
+
+                <p>Manage Funds</p>
+                <input type="number" name="fund" value="100.00">
+
+                <br><br>
+
+                <input type="submit" value="Add" name="action" class="btn btn-primary">
+
+                <input type="submit" value="Remove" name="action" class="btn btn-primary">
+            </form>
+        </div>
+        <div class="col-md-7 mt-5 p-3">
+            <table>
+                <tr>
+                    <th>Date and Time</th>
+                    <th>Amount</th>
+                    <th>Added By</th>
+                </tr>
+                <tr>
+                    {% for x in wallet %}
+                    <td>{{x.created_at}}</td>
+                    <td></td>
+                    <td></td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </div> -->
+
+
+        <p>Manage Funds => </p>
+        <a href="{% url 'manage_funds' %}">Click Here</a>
+
+        <p>To See All Detailes => </p>
+        <a href="{% url 'wallet_dashboard' %}">Click Here</a>
+    </div>
+   </div>
+    
+
+{% endblock content %}

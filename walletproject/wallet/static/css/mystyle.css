@@ -1,0 +1,8 @@
+.banner {
+    background-image: url("{% static 'images/djangoToDo.jpg' %}");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: red;
+}
