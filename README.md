@@ -45,6 +45,10 @@ Use the access token in the Authorization header for all subsequent API requests
 
 ![Catalyst-postman](https://github.com/user-attachments/assets/06f2eaa5-c09a-40c2-868b-b299242781ab)
 
+## Screenshot of Wallet Dashboard
+
+![wallet-dashboard](https://github.com/user-attachments/assets/76c34773-c0a4-4bfb-8f67-512d0543c9fd)
+
 
 
 
